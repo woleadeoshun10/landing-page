@@ -240,6 +240,23 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+/* Footer */
+#footer {
+  background-attachment: scroll;
+  background-color: #1f1815;
+  background-image: url("images/unspash.png"), url("../../images/bg.jpg");
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  padding: 1.5em;
+  text-align: center;
+  width: 100%;
+  position: static;           /* default flow */
+  color: #fff;
+}
+
+
+
 
 /* Container */
 
@@ -3084,8 +3101,8 @@ input, select, textarea {
 				background-size: auto,							cover;
 				bottom: auto;
 				left: auto;
-				padding: 4em 4em 6em 4em;
-				position: relative;
+				padding: 1em;
+				position: static;
 				text-align: center;
 				width: 100%;
 			}
