@@ -253,6 +253,7 @@ input, select, textarea {
   width: 100%;
   position: static;           /* default flow */
   color: #fff;
+  margin-left: 350px;
 }
 
 
