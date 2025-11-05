@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-  <html>
+<html>
+    <head>
         <title>Adewole Adeoshun Landing Page</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,51 +10,62 @@
         <style>
             /* Custom styles for spacing and font sizes */
             #header h1 {
-                font-size: 2em; /* Larger font size for the name */
-                font-weight: bold; /* Make the text bold */
-                margin-bottom: 10px; /* Add spacing below the name */
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 10px;
             }
             #header h2 {
-                font-size: 1.2em; /* Adjust the font size for the subtitle */
-                margin-bottom: 20px; /* Add spacing below the subtitle */
+                font-size: 1.2em;
+                margin-bottom: 20px;
             }
             #two p {
-                font-size: 1em; /* Adjust the font size */
-                margin-bottom: 20px; /* Add spacing below the paragraph */
+                font-size: 1em;
+                margin-bottom: 20px;
             }
             #two .learn-more {
-                font-size: 1.2em; /* Smaller than passionate but still prominent */
-                font-weight: bold; /* Make the text bold */
-                margin-bottom: 20px; /* Add spacing below the heading */
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
             #two .actions {
-                margin-top: 20px; /* Add spacing above the button */
+                margin-top: 20px;
             }
             #one .section-content {
-                font-size: 1em; /* Adjust the font size */
+                font-size: 1em;
             }
             #one .passionate {
-                font-size: 1.5em; /* Larger font size for passionate */
-                font-weight: bold; /* Make the text bold */
-                margin-bottom: 20px; /* Add spacing below the heading */
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
             #one h2, #two h2, #three h2, #four h2 {
-                font-size: 2em; /* Larger font size for section headings */
-                font-weight: bold; /* Make the section headings bold */
-                margin-bottom: 20px; /* Add spacing below the section headings */
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
             .section-content p {
-                margin-bottom: 20px; /* Add spacing below paragraphs */
+                margin-bottom: 20px;
             }
             #three .passionate, #four .passionate {
-                font-size: 1.5em; /* Larger font size for passionate */
-                font-weight: bold; /* Make the text bold */
-                margin-bottom: 20px; /* Add spacing below the heading */
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
             #three .section-content, #four .section-content {
-                font-size: 1em; /* Adjust the font size */
+                font-size: 1em;
             }
-        
+            /* Contact form message styling */
+            #form-status {
+                margin-top: 15px;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            #form-status.success {
+                color: green;
+            }
+            #form-status.error {
+                color: red;
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -130,34 +142,37 @@
                 <h2>Get In Touch</h2>
                 <div class="row">
                     <div class="col-8 col-12-small">
-                        <form method="post" action="#">
+                        <!-- ✅ Updated Form with Formspree integration -->
+                        <form id="contact-form" action="https://formspree.io/f/mvgvezjn" method="POST">
                             <div class="row gtr-uniform gtr-50">
-                                <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+                                <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+                                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
                             </div>
+                            <ul class="actions">
+                                <li><button type="submit" class="button">Send Message</button></li>
+                            </ul>
+                            <p id="form-status"></p>
                         </form>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" /></li>
-                        </ul>
                     </div>
+
                     <div class="col-4 col-12-small">
                         <ul class="labeled-icons">
                             <li>
                                 <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                                <a href="mailto:woleadeoshun18@gmail.com" class="visually-hidden">woleadeoshun18@gmail.com</a>
+                                <a href="mailto:woleadeoshun18@gmail.com">woleadeoshun18@gmail.com</a>
                             </li>
                             <li>
                                 <h3 class="icon brands fa-github"><span class="label">GitHub</span></h3>
-                                <a href="https://github.com/woleadeoshun10" target="_blank" class="visually-hidden">github.com/woleadeoshun10</a>
+                                <a href="https://github.com/woleadeoshun10" target="_blank">github.com/woleadeoshun10</a>
                             </li>
                             <li>
                                 <h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-                                <a href="https://linkedin.com/in/adewoleadeoshun" target="_blank" class="visually-hidden">linkedin.com/in/adewole-adeoshun</a>
+                                <a href="https://linkedin.com/in/adewoleadeoshun" target="_blank">linkedin.com/in/adewole-adeoshun</a>
                             </li>
                             <li>
                                 <h3 class="icon brands fa-instagram"><span class="label">Instagram</span></h3>
-                                <a href="https://www.instagram.com/woletheripper" target="_blank" class="visually-hidden">instagram.com/woletheripper</a>
+                                <a href="https://www.instagram.com/woletheripper" target="_blank">instagram.com/woletheripper</a>
                             </li>
                         </ul>
                     </div>
@@ -168,38 +183,42 @@
 
         <!-- Footer -->
         <footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            <li><a href="https://linkedin.com/in/adewoleadeoshun"class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
-            <li><a href="https://github.com/woleadeoshun10" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://www.instagram.com/woletheripper/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="mailto:woleadeoshun18@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Adewole Adeoshun. All rights reserved.</li>
-        </ul>
-    </div>
-</footer>
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://linkedin.com/in/adewoleadeoshun" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/woleadeoshun10" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="https://www.instagram.com/woletheripper/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:woleadeoshun18@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Adewole Adeoshun. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
 
         <script src="assets/js/main.js"></script>
         <script>
-            // JavaScript to set the current year in the copyright notice
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+            // ✅ Formspree async handler
+            const form = document.getElementById('contact-form');
+            const status = document.getElementById('form-status');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const data = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    status.textContent = '✅ Message sent successfully! I’ll get back to you soon.';
+                    status.className = 'success';
+                    form.reset();
+                } else {
+                    status.textContent = '⚠️ There was a problem sending your message. Please try again.';
+                    status.className = 'error';
+                }
+            });
         </script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
